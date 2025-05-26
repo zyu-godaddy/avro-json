@@ -76,3 +76,11 @@ in the standard way *and* by `AutoJsonDecoder`,
 the results will be the same.
 Otherwise, false negatives and false positives are possible.
 
+## Testing
+
+The implementation is tested with Avro's own test cases,
+see https://github.com/zyu-godaddy/avro/pull/1/files,
+with modifications:
+
+- `JsonDecoder` is replaced with `AutoJsonDecoder`
+- writer's schemas are replaced by reader's schema
