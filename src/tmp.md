@@ -110,6 +110,11 @@ a physical process at some space and time range.
 It takes time.
 It is stateful, imperative.
 
+state machine: only need current state and next event, one calculation per event.
+accumalative/incremental. It is aggregation.
+However, state is often high cardinality, e.g. `[(account,time,amount)]`;
+typically "aggregation" refers to more reduction of cardinality, e.g. `[(account,sum)]`
+
 ## event/function first -- state/compute first
 
 ## partition
